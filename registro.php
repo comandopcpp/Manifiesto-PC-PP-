@@ -4,9 +4,9 @@
 	$db = mysql_select_db("formulario",$link) or die("<h2>Error de Conexion</h2>");
 
 	//obtenemos los valores del formulario
-	$name = $_POST['nombreuser'];
-	$discord = $_POST['apellidosuser'];
-	$message = $_POST['emailuser'];
+	$name = $_POST['name'];
+	$discord = $_POST['discord'];
+	$message = $_POST['message'];
 
 	//Obtiene la longitus de un string
 	$req = (strlen($name)*strlen($discord)*strlen($message)) or die("No se han llenado todos los campos");
